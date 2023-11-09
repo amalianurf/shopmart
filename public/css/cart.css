@@ -1,0 +1,198 @@
+main {
+    padding: 40px 0;
+}
+
+.product-list {
+    margin: 0 80px;
+    padding: 84px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 8px;
+    border-bottom: solid 2px #d1d5db;
+}
+
+td {
+    text-align: center;
+    height: 100px;
+    padding: 8px 0;
+    border-bottom: solid 1px #d1d5db;
+}
+
+td img {
+    height: 100%;
+}
+
+.product-name {
+    text-align: left;
+}
+
+.product-price {
+    text-align: right;
+}
+
+.delete-cart {
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    outline: none;
+    -moz-appearance: textfield;
+    border: solid 1px #d1d5db;
+    width: 30px;
+    padding: 4px;
+    text-align: center;
+}
+
+.number button {
+    outline: none;
+    background-color: white;
+    border: solid 1px #d1d5db;
+    width: 30px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.total-product {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    gap: 36px;
+    position: fixed;
+    bottom: 0;
+    padding: 16px 80px;
+    box-shadow: 0 -4px 8px 0 #3333334b;
+}
+
+.total-product .total {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.total .total-price {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.buy-now {
+    padding: 12px 48px;
+    background-color: #8BD8BC;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #83cab0;
+}
+
+.modal-background {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #33333341;
+    z-index: 10;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    flex-direction: column;
+    gap: 24px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px 0 #3333334b;
+    padding: 12px 24px;
+    padding-right: 12px;
+    padding-bottom: 24px;
+    z-index: 20;
+}
+
+.modal > p {
+    padding-right: 12px;
+}
+
+.close-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    border-bottom: solid 1px #d1d1d1;
+}
+
+.close-wrapper > p {
+    font-weight: bold;
+}
+
+.close-button {
+    width: 36px;
+    height: 36px;
+    padding: 6px 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.close-button:hover {
+    background-color: #f2f2f2;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-wrapper .delete-button {
+    background-color: red;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+.button-wrapper .delete-button:hover {
+    background-color: rgb(221, 0, 0);
+}
+
+.button-wrapper .cancel-button {
+    background-color: #d5d5d5;
+    border: none;
+    color: #333333;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+.button-wrapper .cancel-button:hover {
+    background-color: #c7c7c7;
+}
+
+.hidden {
+    display: none;
+}
