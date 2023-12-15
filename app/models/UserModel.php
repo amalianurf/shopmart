@@ -21,8 +21,10 @@ class UserModel {
 
             if ($role === "admin") {
                 $_SESSION["admin"] = true;
+                header("Location: " . BASEURL . "/admin/users");
+            } else {
+                header("Location: " . BASEURL);
             }
-            header("Location: " . BASEURL);
         } else {
             $_SESSION["fail_message"] = "Password atau email salah!";
             header("Location: " . BASEURL . "/login");

@@ -112,7 +112,7 @@
                         <input type="submit" value="Simpan">
                     </div>
                 <?php else: ?>
-                    <a href="<?= BASEURL ?>/profile/true" class="btn-edit">Edit Profil</a>
+                    <a href="<?= BASEURL ?>/profile/edit" class="btn-edit">Edit Profil</a>
                 <?php endif; ?>
             </form>
         </div>

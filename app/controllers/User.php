@@ -71,7 +71,7 @@ class User extends Controller {
             BASEURL . "/public/css/profile.css"
         ];
 
-        $data["edit"] = $isEdit;
+        $data["edit"] = $isEdit == 'edit' ? true : false;
         if (isset($_SESSION["email"])) {
             $data["user"] = $this->model("UserModel")->getUserByEmail($_SESSION["email"]);
         }
