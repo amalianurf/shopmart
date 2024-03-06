@@ -58,7 +58,7 @@ form {
     grid-column: -1 / 1;
 }
 
-.form-group.name > label::after, .form-group.email > label::after, .form-group.password > label::after, .form-group.phone > label::after, .form-group.gender > label::after, .form-group.birth-place > label::after, .form-group.birth-date > label::after, label[for="terms-condition"]::after {
+.form-group.name > label::after, .form-group.email > label::after, .form-group.password > label::after, .form-group.phone > label::after, .form-group.gender > label::after, .form-group.birth-place > label::after, .form-group.birth-date > label::after, label[for="terms-condition"]::after, .form-group.profile > label::after {
     content: " *";
     color: red;
 }

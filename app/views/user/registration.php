@@ -92,7 +92,7 @@
 
                 <div class="form-group profile">
                     <label for="profile">Upload Foto Profil</label>
-                    <input type="file" id="profile" name="profile" accept="image/*" onchange="checkFile()">
+                    <input type="file" id="profile" name="profile" accept="image/*" onchange="checkFile()" required>
                     <p id="fileTypeError" style="color: red; font-size: 14px; text-align: left; display: none;">Only image files are allowed.</p>
                     <p id="fileSizeError" style="color: red; font-size: 14px; text-align: left; display: none;">File size exceeds the limit. Maximum file size 1MB.</p>
                 </div>

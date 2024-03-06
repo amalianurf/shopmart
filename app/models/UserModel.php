@@ -67,6 +67,11 @@ class UserModel {
             }
         } else {
             $_SESSION["fail_message"] = "Email telah terdaftar!";
+            if (isset($_SESSION["admin"])) {
+                header("Location: " . BASEURL . "/admin/users/add");
+            } else {
+                header("Location: " . BASEURL . "/registration");
+            }
         }
     }
 

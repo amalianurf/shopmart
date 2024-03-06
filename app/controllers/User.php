@@ -41,6 +41,7 @@ class User extends Controller {
                 $uploadedFile = $uploadDir . basename($profile);
             } else {
                 $_SESSION["fail_message"] = "Gagal mengunggah gambar.";
+                header("Location: " . BASEURL . "/registration");
                 exit;
             }
 
